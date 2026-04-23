@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "自動清除瀏覽歷史",
+  "version": "1.0",
+  "description": "訪問指定網站時自動清除瀏覽器歷史記錄",
+  "permissions": [
+    "history",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "*://www.example.com/*",
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
